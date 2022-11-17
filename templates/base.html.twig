@@ -14,6 +14,10 @@
         {% endblock %}
     </head>
     <body>
+    <div>
+        <a href="{{ path('app_formation') }}" > Les formations</a>
+        <a href="{{ path('app_formation_create') }}" > Créer </a>
+    </div>
         {% block body %}{% endblock %}
     </body>
 </html>
