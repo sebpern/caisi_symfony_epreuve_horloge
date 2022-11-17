@@ -41,7 +41,7 @@ class FormationController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
 
-            $this->em->rep->save($formation,true);
+            $this->rep->save($formation,true);
             
             return $this->redirectToRoute('app_formation');
         }
